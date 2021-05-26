@@ -1,0 +1,24 @@
+{
+  "name": "hipsum-backend",
+  "version": "1.0.0",
+  "description": "Simple Backend for hipsum",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asquiroga/hipsum-backend.git"
+  },
+  "author": "Alfonso Quiroga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asquiroga/hipsum-backend/issues"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
+  },
+  "homepage": "https://github.com/asquiroga/hipsum-backend#readme"
+}

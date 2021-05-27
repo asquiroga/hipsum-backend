@@ -1,7 +1,10 @@
 const express = require('express');
 const fetch = require('node-fetch');
 
-const app = express();
+var cors = require('cors')
+var app = express()
+
+app.use(cors())
 
 /* List of tasks */
 app.get('/tasks/:numberOfTasks', async (req, res) => {
@@ -20,4 +23,4 @@ app.get('/complete/:id', (req, res) => {
     res.send({ completed: true });
 });
 
-app.listen(3050, () => console.log('OK'));
+app.listen(3050, () => console.log('Backend server up and running...'));

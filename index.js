@@ -18,7 +18,7 @@ app.get('/tasks/:numberOfTasks', async (req, res) => {
     res.send(tasks);
 });
 
-app.get('/complete/:id', (req, res) => {
+app.post('/complete/:id', (req, res) => {
     console.log(`Task completed: ${req.params.id}`);
     res.send({ completed: true });
 });
